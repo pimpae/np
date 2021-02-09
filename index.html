@@ -18,11 +18,14 @@
 	<div class="envelope new">
 	    <div class="front">
 	        <div class="mailme">
-	            <p>กดเพื่อเปิด</p> 
+	            <p>แตะเพื่อเปิด</p> 
+	            <audio id="myAudio"> 
+				  <source src="images/Untitled.mp3" type="audio/mpeg"> 
+				</audio>
 	        </div>
 	    </div>
 	    <div class="back">
-	        <div class="letter  text-center">
+	        <div class="letter text-center">
 	        	<br><br><br><br><br>
 	        	น้ำยัยอ้วน
 	        </div>
@@ -48,6 +51,11 @@
 		  	if (!$('.envelope').hasClass('open')){
 		    	$('.envelope').click(function(){
 		      		$(this).removeClass('new').addClass('open');
+		      		var x = document.getElementById("myAudio");
+
+		    
+					x.play(); 
+				 
 		    	});
 		  	}
 		  

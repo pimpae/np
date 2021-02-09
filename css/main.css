@@ -5,8 +5,8 @@ body, html {
 }
 
 @font-face{
-  font-family: rsu-rt;
-  src: url(../fonts/RSU-Text-Regular.ttf);
+  font-family: pr-rak;
+  src: url(../fonts/FC-PorRak-Regular.otf);
   font-style: normal;
   font-variant:initial;
 }
@@ -14,7 +14,7 @@ body, html {
 
 body {
   margin: 0;
-  background-color: #DBD4DB;
+  background-color: #F2E2E2;
   position: relative;
   perspective: 800px;
   overflow: hidden;
@@ -35,7 +35,19 @@ body {
   font-family: "Allan", sans-serif;
   color: #1F1F1F;
 }
-.envelope .front, .envelope .back {
+.envelope .front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: inset 0 0 30px -5px #FEABBB, 0 0 20px -5px;
+}
+
+.envelope .back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -75,8 +87,16 @@ body {
   text-align: center;
   display: table-cell;
   vertical-align: middle;
-  font-family: rsu-rt; 
+  font-family: pr-rak; 
 }
+
+/*.envelope .front .mailme:after{
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: ";ssssssss";
+}*/
+
 .envelope .front .mailme p {
   font-weight: bold;
   margin: 0;
@@ -162,7 +182,7 @@ body {
   width: 530px;
   height: 346.66667px;
   background-color: #FFF;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   padding: 0 30px;
   box-sizing: border-box;
   box-shadow: inset 0 0px 30px -5px #B08C5B, 0 0 10px -5px;
@@ -356,7 +376,7 @@ body {
 
 /*
 
-#DBD4DB
+#F2E2E2
 #F2E2E2
 #FEABBB
 #F6BEC9
