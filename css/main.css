@@ -394,6 +394,7 @@ body {
 
 .flip-container {
   perspective: 1000px;
+  cursor: pointer;
 }
 
 .flip-container.hover .flipper {
@@ -423,4 +424,13 @@ body {
 }
 .backx {
   transform: rotateY(180deg);
+}
+.fas{
+  color: #000;
+  font-size: 30px; 
+  opacity: .5;
+  top: 0%;
+  position: absolute;
+  margin-top: 470px;
+  margin-left: -15px;
 }
