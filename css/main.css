@@ -23,12 +23,12 @@ body {
 .envelope {
   z-index: 2;
   position: absolute;
-  width: 550px;
-  height: 366.66667px;
-  top: 50%;
+  width: 366.66667px;
+  height: 550px;
+  top: 40%;
   left: 50%;
   margin-top: -183.33333px;
-  margin-left: -275px;
+  margin-left: -175px;
   transform-style: preserve-3d;
   transform-origin: right center;
   transition: transform 1s ease;
@@ -43,8 +43,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
-  border-radius: 5px;
-  box-shadow: inset 0 0 30px -5px #FEABBB, 0 0 20px -5px;
+  /*border-radius: 5px;*/
+  /*box-shadow: inset 0 0 30px -5px #FEABBB, 0 0 20px -5px;*/
 }
 
 .envelope .back {
@@ -52,8 +52,9 @@ body {
   width: 100%;
   height: 100%;
   background-color: #FFF;
-  border-radius: 5px;
-  box-shadow: inset 0 0 30px -5px #FEABBB, 0 0 20px -5px;
+  /*margin-top: -150%;*/
+  /*border-radius: 5px;*/
+  /*box-shadow: inset 0 0 30px -5px #FEABBB, 0 0 20px -5px;*/
 }
 .envelope .front {
   backface-visibility: hidden;
@@ -120,12 +121,20 @@ body {
 .envelope .back .flap:before {
   content: "";
   position: absolute;
-  background-color: #FFF;
-  box-shadow: inset 0 0 30px -7px #a87e50;
+  background-color: #fff;
+  box-shadow: inset 0 0 30px -7px #FEABBB;
 }
-.envelope .back .top-flap:before, .envelope .back .bottom-flap:before {
-  width: 388.90873px;
-  height: 388.90873px;
+.envelope .back .top-flap:before{
+  width: 320px;
+  height: 346px;
+  margin-left: -16%;
+  margin-top: -45px;
+}
+.envelope .back .bottom-flap:before {
+  width: 550px;
+  height: 750px;
+  margin-left: -345px;
+  margin-top: -80px;
 }
 .envelope .back .top-flap {
   z-index: 5;
@@ -149,8 +158,8 @@ body {
   border-top-right-radius: 10px;
 }
 .envelope .back .left-flap:before, .envelope .back .right-flap:before {
-  width: 269.27249px;
-  height: 269.27249px;
+  width: 268px;
+  height: 268px;
   top: -5px;
 }
 .envelope .back .left-flap {
@@ -179,8 +188,8 @@ body {
   position: absolute;
   top: 5px;
   left: 10px;
-  width: 530px;
-  height: 346.66667px;
+  width: 346.66667px;
+  height: 530px;
   background-color: #FFF;
   /*border-radius: 5px;*/
   padding: 0 30px;
@@ -281,7 +290,7 @@ body {
   }
   100% {
     left: 50%;
-    margin-left: -275px;
+    margin-left: -175px;
   }
 }
 @keyframes open {
